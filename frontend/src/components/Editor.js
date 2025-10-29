@@ -532,6 +532,9 @@ const Editor = () => {
     link.click();
     document.body.removeChild(link);
     
+    // Close the export dialog
+    setShowExportDialog(false);
+    
     toast.success(`${format.toUpperCase()} olarak dışa aktarıldı`);
   };
 

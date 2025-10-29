@@ -586,7 +586,7 @@ const Editor = () => {
             {saving ? 'Kaydediliyor...' : 'Kaydet'}
           </Button>
           
-          <Dialog>
+          <Dialog open={showExportDialog} onOpenChange={setShowExportDialog}>
             <DialogTrigger asChild>
               <Button
                 variant="outline"

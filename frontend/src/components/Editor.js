@@ -58,6 +58,7 @@ const Editor = () => {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [activeTab, setActiveTab] = useState('design');
+  const [showExportDialog, setShowExportDialog] = useState(false);
   
   // Canvas state
   const [canvasObjects, setCanvasObjects] = useState([]);
